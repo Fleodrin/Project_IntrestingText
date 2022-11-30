@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Лабораторная работа №9</title>
+</head>
+
+<body class="page__body page__body--background">
+<main class="page__form">
+    <h1 class="page__form-title">Интересный текст</h1>
+    <div class="form__button-wrapper">
+        <button class="button button--count active" type="button">Количество слов:</button>
+        <button class="button button--compare" type="button">Замена слов</button>
+    </div>
+    <form class="form" method="post" autocomplete="off">
+        <p class="form__filed-wrapper">
+            <label class="form__label" for="field-number1">Ваш текст:</label>
+            <input class="form__field field" type="text" id="field-number1" name="field-number">
+            <label class="form__label" for="field-number2">Количество слов:</label>
+            <input class="form__field field form__number-second" type="text" id="field-number2" name="field-number" readonly>
+            <label class="form__label" for="field-result">Без лишних пробелов:</label>
+            <input class="form__field form__field-result field" type="text" id="field-result" name="field-number" readonly>
+        </p>
+        <button class="form__button button" type="submit" id="submit-button">Посчитать</button>
+    </form>
+</main>
+<script src="js/main.js"></script>
+</body>
+</html>
